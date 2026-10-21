@@ -14,6 +14,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { Typography } from "antd";
 import GlobalLoader from "./components/GlobalLoader";
 import AddModule from "./pages/AddModule";
+import RoleModuleAccess from "./pages/RoleModuleAccess";
 
 
 const { Title, Text } = Typography;
@@ -70,6 +71,10 @@ export default function App() {
             <Route
               path="/createModule"
               element={<AddModule title="Create Module" />}
+            />
+            <Route
+              path="/rolesModulesAccess"
+              element={<RoleModuleAccess title="Roles Module Access" />}
             />
           </Route>
         </Route>

@@ -72,6 +72,11 @@ export default function MainLayout() {
       icon: <PlusCircleFilled />,
       label: "Create Module",
     },
+    {
+      key: "/rolesModulesAccess",
+      icon: <PlusCircleFilled />,
+      label: "Roles & Modules Access",
+    },
   ];
 
   const selectedKey =
