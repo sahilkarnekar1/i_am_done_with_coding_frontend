@@ -18,8 +18,8 @@ import axios from "axios";
 
 import { BASE_URL } from "../apisConfig/baseUrl";
 import {
-  showLoad,
   hideLoader,
+  showLoader,
 } from "../redux/slices/loaderSlice";
 
 const { Title, Text } = Typography;
@@ -32,7 +32,7 @@ localStorage.removeItem("token");
 },[])
   
   const handleLogin = async (values) => {
-    dispatch(showLoad());
+    dispatch(showLoader());
 
     try {
       const response = await axios.post(

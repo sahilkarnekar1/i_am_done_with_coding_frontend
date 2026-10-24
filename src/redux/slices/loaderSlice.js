@@ -6,7 +6,7 @@ const loaderSlice = createSlice({
     loadingCount: 0,
   },
   reducers: {
-    showLoad: (state) => {
+    showLoader: (state) => {
       state.loadingCount += 1;
     },
 
@@ -22,7 +22,7 @@ const loaderSlice = createSlice({
   },
 });
 
-export const { showLoad, hideLoader, resetLoader } =
+export const { showLoader, hideLoader, resetLoader } =
   loaderSlice.actions;
 
 export default loaderSlice.reducer;

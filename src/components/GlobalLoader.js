@@ -13,6 +13,9 @@ export default function GlobalLoader() {
       fullscreen
       size="large"
       tip="Loading..."
+      style={{
+        zIndex: 99999,
+      }}
     />
   );
 }

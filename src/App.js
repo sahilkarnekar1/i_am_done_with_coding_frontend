@@ -15,6 +15,7 @@ import { Typography } from "antd";
 import GlobalLoader from "./components/GlobalLoader";
 import AddModule from "./pages/AddModule";
 import RoleModuleAccess from "./pages/RoleModuleAccess";
+import AddUser from "./pages/AddUser";
 
 
 const { Title, Text } = Typography;
@@ -75,6 +76,10 @@ export default function App() {
             <Route
               path="/rolesModulesAccess"
               element={<RoleModuleAccess title="Roles Module Access" />}
+            />
+            <Route
+              path="/addUser"
+              element={<AddUser title="Users" />}
             />
           </Route>
         </Route>
